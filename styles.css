@@ -1,9 +1,33 @@
 body {
     color: saddlebrown;
     background-color: gainsboro;
+    margin: 50px;
 }
-
+header {
+    color: darkslategrey;
+    text-align: center;
+    border: 0.5em dashed;
+    padding: 5px;
+    margin-bottom: 50px;
+}
 h1 {
+    font: xx-large Helvetica;
+    color: darkslategrey;
+}
+nav {
+    color: darkslategrey;
+}
+img {
+    max-width: 120px;
+    max-height: 120px;
+    word-wrap: normal;
+}
+h2 {
     font: x-large Helvetica;
-    color: darkslategrey
+    color: darkslategrey;
+    word-wrap: normal;
+}
+h3 {
+    font: large Helvetica;
+    color: darkslategrey;
 }
