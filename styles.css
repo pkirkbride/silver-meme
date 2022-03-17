@@ -1,33 +1,38 @@
 body {
-    color: saddlebrown;
-    background-color: gainsboro;
     margin: 50px;
 }
 header {
-    color: darkslategrey;
-    text-align: center;
-    border: 0.5em dashed;
-    padding: 5px;
-    margin-bottom: 50px;
+    background-color: #f2ceae;
+    padding: 10px;
 }
 h1 {
     font: xx-large Helvetica;
-    color: darkslategrey;
-}
-nav {
-    color: darkslategrey;
+    color: #038C32;
 }
 img {
-    max-width: 120px;
-    max-height: 120px;
-    word-wrap: normal;
+    max-width: 33%;
+    padding: 1em;
+}
+.main {
+    float: left;
+    padding: 5px;
+    max-width: 25%;
+}
+.options {
+    float: left;
+    width: 33%;
+    padding: 5px;
 }
 h2 {
     font: x-large Helvetica;
-    color: darkslategrey;
+    color: #008f94;
     word-wrap: normal;
 }
 h3 {
     font: large Helvetica;
-    color: darkslategrey;
+    color: #f2d06d;
+}
+.container {
+    column-count: 3;
+    column-gap: 1em;
 }
