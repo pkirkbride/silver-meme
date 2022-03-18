@@ -7,7 +7,7 @@ header {
 }
 h1 {
     font: xx-large bold;
-    color: #038C32;
+    color: #008f94;
 }
 .main {
     float: left;
@@ -22,11 +22,11 @@ h1 {
 }
 h2 {
     font: x-large bold;
-    color: #038C32;
+    color: #008f94;
 }
 h3 {
     font: large;
-    color: #038C32;
+    color: #008f94;
 }
 .container {
     position: relative;
@@ -38,9 +38,10 @@ h3 {
 .topnav {
     background-color: #f2ceae;
     list-style-type: none;
-    text-align: center;
+    text-align: left;
     margin: 0;
     padding: 0;
+    column-count: 1;
 }
 /*.topnav a {
     display: inline-block;
@@ -82,14 +83,16 @@ footer {
 }
 .text-block {
     position: absolute;
-    bottom: 20px;
-    right: 20px;
-    background-color: #f26330;
+    top: 0px;
+    left: 20px;
+    background-color: #008f94;
     color: white;
     padding-left: 20px;
     padding-right: 20px;
+    padding-top: 5px;
 }
 nav {
+    margin-top: 20px;
     padding-left: 10px;
     column-count: 3;
 }
