@@ -9,15 +9,11 @@ h1 {
     font: xx-large bold;
     color: #038C32;
 }
-.midnav {
-    max-width: 33%;
-}
-
 .main {
     float: left;
     padding: 10px;
     padding-top: 25px;
-    max-width: 25%;
+    max-width: 50%;
 }
 .options {
     float: left;
@@ -33,10 +29,10 @@ h3 {
     color: #038C32;
 }
 .container {
-    margin: auto;
+    column-count: 3;
+}
+.image.button {
     width: 100%;
-    column-width: 33%;
-    border: 3px #038C32;
 }
 .topnav {
     background-color: #f2d06d;
@@ -71,9 +67,15 @@ h3 {
     float: right;
     width: 33%;
 }
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
 .active {
     background-color: #038C32;
 }
 footer {
+    background-color: #f2d06d;
     padding: 10px;
 }
