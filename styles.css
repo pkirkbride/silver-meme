@@ -7,13 +7,13 @@ header {
 }
 h1 {
     font: xx-large bold;
-    color: #008f94;
+    color: #5a8a8a;
 }
 .main {
     float: left;
     padding: 10px;
     padding-top: 25px;
-    max-width: 50%;
+    max-width: 48%;
 }
 .options {
     float: left;
@@ -22,11 +22,12 @@ h1 {
 }
 h2 {
     font: x-large bold;
-    color: #008f94;
+    color: #5a8a8a;
 }
 h3 {
     font: large;
-    color: #008f94;
+    color: #974d26;
+    font-style: italic;
 }
 .container {
     position: relative;
@@ -36,7 +37,7 @@ h3 {
     width: 100%;
 }
 .topnav {
-    background-color: #f2ceae;
+    background-color: #cad8c5;
     list-style-type: none;
     text-align: left;
     margin: 0;
@@ -56,7 +57,7 @@ h3 {
     text-decoration: none;
 }
 .topnav a:hover {
-    background-color: #038C32;
+    background-color: #5a8a8a;
     color: rgb(255, 255, 255);
 }
 .column {
@@ -78,21 +79,21 @@ h3 {
     background-color: #038C32;
 }
 footer {
-    background-color: #f2ceae;
+    background-color: #cad8c5;
     padding: 10px;
 }
 .text-block {
     position: absolute;
     top: 0px;
     left: 20px;
-    background-color: #008f94;
+    background-color: #5a8a8a;
     color: white;
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 5px;
 }
 nav {
-    margin-top: 20px;
+    margin-top: 30px;
     padding-left: 10px;
     column-count: 3;
 }
