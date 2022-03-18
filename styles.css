@@ -35,7 +35,7 @@ h3 {
     width: 100%;
 }
 .topnav {
-    background-color: #f2d06d;
+    background-color: #f2ceae;
     list-style-type: none;
     text-align: center;
     margin: 0;
@@ -76,6 +76,6 @@ h3 {
     background-color: #038C32;
 }
 footer {
-    background-color: #f2d06d;
+    background-color: #f2ceae;
     padding: 10px;
 }
