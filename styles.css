@@ -6,49 +6,60 @@ header {
     padding: 10px;
 }
 h1 {
-    font: xx-large Helvetica bold;
+    font: xx-large bold;
     color: #038C32;
 }
-img {
+.midnav {
     max-width: 33%;
 }
 
 .main {
     float: left;
     padding: 10px;
-    padding-top: 20px;
+    padding-top: 25px;
     max-width: 25%;
 }
 .options {
     float: left;
     width: 33%;
-    padding: 5px;
+    margin: auto;
 }
 h2 {
-    font: x-large Helvetica bold;
+    font: x-large bold;
     color: #038C32;
 }
 h3 {
-    font: large Helvetica;
+    font: large;
     color: #038C32;
 }
 .container {
-    float: left;
-    width: 33%;
+    margin: auto;
+    width: 100%;
+    column-width: 33%;
+    border: 3px #038C32;
 }
 .topnav {
     background-color: #f2d06d;
-}
-.topnav a {
-    float: left;
-    display: block;
-    color: black;
-    text-decoration: none;
+    list-style-type: none;
     text-align: center;
-    padding: 14px 16px;
+    margin: 0;
+    padding: 0;
+}
+/*.topnav a {
+    display: inline-block;
+    font-size: 20px;
+    padding: 15px;
+} */
+.topnav a {
+    display: inline-block;
+    font-size: 20px;
+    color: black;
+    padding: 15px;
+    text-decoration: none;
 }
 .topnav a:hover {
     background-color: #038C32;
+    color: rgb(255, 255, 255);
 }
 .column {
     float: left;
@@ -62,4 +73,7 @@ h3 {
 }
 .active {
     background-color: #038C32;
+}
+footer {
+    padding: 10px;
 }
