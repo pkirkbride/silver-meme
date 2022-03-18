@@ -75,9 +75,9 @@ h3 {
     display: table;
     clear: both;
 }
-.active {
+/*.active {
     background-color: #038C32;
-}
+} */
 footer {
     background-color: #cad8c5;
     padding: 10px;
@@ -86,11 +86,12 @@ footer {
     position: absolute;
     top: 0px;
     left: 20px;
-    background-color: #5a8a8a;
+    background-color: #974d26;
     color: white;
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 5px;
+    opacity: 0.8;
 }
 nav {
     margin-top: 30px;
