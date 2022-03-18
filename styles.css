@@ -11,12 +11,12 @@ h1 {
 }
 img {
     max-width: 33%;
-    padding: 5px;
 }
 
 .main {
     float: left;
     padding: 10px;
+    padding-top: 20px;
     max-width: 25%;
 }
 .options {
