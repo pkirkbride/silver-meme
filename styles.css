@@ -6,7 +6,7 @@ header {
     padding: 10px;
 }
 h1 {
-    font: xx-large bold;
+    font-size: xx-large bold;
     color: #5a8a8a;
 }
 .main {
@@ -21,11 +21,11 @@ h1 {
     margin: auto;
 }
 h2 {
-    font: x-large bold;
+    font-size: x-large bold;
     color: #5a8a8a;
 }
 h3 {
-    font: large;
+    font-size: large;
     color: #974d26;
     font-style: italic;
 }
