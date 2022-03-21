@@ -36,9 +36,7 @@
         <nav>
             <div class="container">
                 <h2 class="text-block">Where to stay</h2>
-                    <a href="https://www.hotels.com">
-                        <img src="images/hotel_bed.jpeg" alt="hotel bed" class="image button">
-                    </a>
+                    <img src="images/hotel_bed.jpeg" alt="hotel bed" class="image button" onclick="displayHotel()">
                 </div>
                 <div class="container">
                 <h2 class="text-block">What to see</h2>
@@ -54,7 +52,7 @@
                 </div>
         </nav>
         </div>
-        <article> <!-- hotel, restaurant, site info -->
+        <article id="article1"> <!-- hotel, restaurant, site info -->
                <h2>Berlin food options</h2>            
                <h3><a href="https://www.dein-alex.de/berlin-alexanderplatz">Alex Berlin</a></h3>
                     <p>Long hours and low prices make this a great place to eat if you're near Alexanderplatz. The all-you-can-eat breakfasat buffet is well worth the 11€ cost. It's perfect to fill up before a day of sightseeing.</p>
@@ -68,5 +66,11 @@
             <address>Contact: pkirkbride@outlook.com</address>
             <p>Copyright 2021 Patrick Kirkbride</p>
         </footer>
+        <script>
+            function displayHotel() {
+                document.getElementById("article1").innerHTML="Test paragraph."
+                
+            }
+        </script>
     </body>
 </html>
