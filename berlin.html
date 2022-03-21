@@ -48,15 +48,33 @@
                 </div>
         </nav>
         </div>
-        <article id="article1"> <!-- hotel, restaurant, site info -->
-               <!-- <h2>Berlin food options</h2>             -->
-               <!-- <h3><a href="https://www.dein-alex.de/berlin-alexanderplatz">Alex Berlin</a></h3>
+        <article id="article1" class="hidden"> <!-- hotel, restaurant, site info -->
+               <h2>Berlin food options Test Hotel</h2>
+               <h3><a href="https://www.dein-alex.de/berlin-alexanderplatz">Alex Berlin</a></h3>
                     <p>Long hours and low prices make this a great place to eat if you're near Alexanderplatz. The all-you-can-eat breakfasat buffet is well worth the 11€ cost. It's perfect to fill up before a day of sightseeing.</p>
                <h3><a href="http://www.zumschusterjungen.com/index.html">Zum Schusterjungen</a></h3>
                     <p>Zum Schusterjungen has typical old Berlin cuisine. If you're in Berlin during the spring, be sure to check out their special Asparagus Menu</p>
                <h3><a href="https://www.ritter-sport.com/de/berlin">Bunte SchokoWelt Berlin</a> </h3>
-                       <p>Chocolate lovers shouldn't miss this Ritter Sport flagship store. Here you can get the iconic square chocolate bars in all the flavors you know and some that you probably don't.</p> -->
+                       <p>Chocolate lovers shouldn't miss this Ritter Sport flagship store. Here you can get the iconic square chocolate bars in all the flavors you know and some that you probably don't.</p>
            </article>
+           <article id="article2" class="hidden"> <!-- hotel, restaurant, site info -->
+            <h2>Berlin food options Test sights</h2>
+            <h3><a href="https://www.dein-alex.de/berlin-alexanderplatz">Alex Berlin</a></h3>
+                 <p>Long hours and low prices make this a great place to eat if you're near Alexanderplatz. The all-you-can-eat breakfasat buffet is well worth the 11€ cost. It's perfect to fill up before a day of sightseeing.</p>
+            <h3><a href="http://www.zumschusterjungen.com/index.html">Zum Schusterjungen</a></h3>
+                 <p>Zum Schusterjungen has typical old Berlin cuisine. If you're in Berlin during the spring, be sure to check out their special Asparagus Menu</p>
+            <h3><a href="https://www.ritter-sport.com/de/berlin">Bunte SchokoWelt Berlin</a> </h3>
+                    <p>Chocolate lovers shouldn't miss this Ritter Sport flagship store. Here you can get the iconic square chocolate bars in all the flavors you know and some that you probably don't.</p>
+        </article>
+        <article id="article3" class="hidden"> <!-- hotel, restaurant, site info -->
+            <h2>Berlin food options</h2>
+            <h3><a href="https://www.dein-alex.de/berlin-alexanderplatz">Alex Berlin</a></h3>
+                 <p>Long hours and low prices make this a great place to eat if you're near Alexanderplatz. The all-you-can-eat breakfasat buffet is well worth the 11€ cost. It's perfect to fill up before a day of sightseeing.</p>
+            <h3><a href="http://www.zumschusterjungen.com/index.html">Zum Schusterjungen</a></h3>
+                 <p>Zum Schusterjungen has typical old Berlin cuisine. If you're in Berlin during the spring, be sure to check out their special Asparagus Menu</p>
+            <h3><a href="https://www.ritter-sport.com/de/berlin">Bunte SchokoWelt Berlin</a> </h3>
+                    <p>Chocolate lovers shouldn't miss this Ritter Sport flagship store. Here you can get the iconic square chocolate bars in all the flavors you know and some that you probably don't.</p>
+        </article>
         </main>
         <footer>
             <address>Contact: pkirkbride@outlook.com</address>
@@ -64,14 +82,19 @@
         </footer>
         <script>
             function displayHotel() {
-                document.getElementById("article1").innerHTML="Hotels"
-                
-            }
-            function displayRestaurant() {
-                document.getElementById("article1").innerHTML="Restaurants"
+                document.getElementById("article1").style.display = "revert"
+                document.getElementById("article2").style.display = "none"
+                document.getElementById("article3").style.display = "none"
             }
             function displaySights() {
-                document.getElementById("article1").innerHTML="Sights"
+                document.getElementById("article2").style.display = "revert"
+                document.getElementById("article1").style.display = "none"
+                document.getElementById("article3").style.display = "none"
+            }
+            function displayRestaurant() {
+                document.getElementById("article3").style.display = "revert"
+                document.getElementById("article1").style.display = "none"
+                document.getElementById("article2").style.display = "none"
             }
         </script>
     </body>
