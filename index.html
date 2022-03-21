@@ -21,12 +21,14 @@
             <div class="row">
             <article class="column lead"> <!-- location intro -->
                 <img class="main" src="images/eiffel_tower.jpeg" alt="Eiffel tower at night">
-                <h2>Where do you want to go?</h2>
+                <h2>Travel dreams start here</h2>
                     <p>Welcome to The Destination Dispatch--your new favorite source for trip ideas and planning. On the page for each city, this paragraph will contain an overview. Click on one of the cities above to learn more aobut the destination.</p>     
             </article>
             <article class="column right"> <!-- weather info -->
-                <h2>Bon voyage</h2>
-                <p>Clicking the images below will display recommendations on each city's page.</p>
+                <h2>Where to?</h2>
+                <p>Enter the city where you'd like to go.</p>
+                <label for="cityField"></label><input type="text" id="cityField" class="cityField">
+                <input type="submit" value="Take me away" class="citySubmit">
             </article>
             </div>
             <div class="row">
@@ -68,5 +70,25 @@
             <address>Contact: pkirkbride@outlook.com</address>
             <p>Copyright 2021 Patrick Kirkbride</p>
         </footer>
+        <script>
+            const citySubmit = document.querySelector('.citySubmit')
+            const cityField = document.querySelector('.cityField')
+        
+            function checkCity() {
+                let userEntry = cityField.value;
+                if (userEntry == "Paris") {
+                    alert("Let me take you to the Paris page.")
+                    window.location="paris.html"
+                } else if (userEntry == "Berlin") {
+                    alert("Let me take you to the Berlin page.")
+                    window.location="berlin.html"
+                } else if (userEntry == "Kyoto") {
+                    alert("The Kyoto site is still under construction. Please select a different city.")
+                } else {
+                    alert("Are you sure you spelled that right? If so, we are still working on a page for that city. Please select a different city.")
+                }
+            }
+            citySubmit.addEventListener('click', checkCity)
+        </script>
     </body>
 </html>
