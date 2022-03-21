@@ -35,33 +35,27 @@
             <nav>
                 <div class="container">
                 <h2 class="text-block">Where to stay</h2>
-                    <a href="https://www.hotels.com">
-                        <img src="images/hotel_bed.jpeg" alt="hotel bed" class="image button">
-                    </a>
+                    <img src="images/hotel_bed.jpeg" alt="hotel bed" class="image button" onclick="displayHotel()">
                 </div>
                 <div class="container">
                 <h2 class="text-block">What to see</h2>
-                    <a href="http://www.google.com">
-                        <img src="images/brandenburg.jpeg" alt="Brandenburg gate in Berlin" class="image button">
-                    </a>
+                    <img src="images/brandenburg.jpeg" alt="Brandenburg gate in Berlin" class="image button" onclick="displaySights()">
                 </div>
                 <div class="container">
                 <h2 class="text-block">Where to eat</h2> 
-                    <a href="http://www.restaurants.com">
-                        <img src="images/german_breakfast.jpeg" alt="Plate of german breakfast food" class="image button">
-                    </a>
+                    <img src="images/german_breakfast.jpeg" alt="Plate of german breakfast food" class="image button" onclick="displayRestaurant()">
                 </div>
             </nav>
             </div>
-            <article> <!-- restaurant info -->
+            <article id="article3" class="hidden"> <!-- restaurant info -->
                <h2>Food galore</h2>            
                     <p>Each city page will link you to unforgettable restaurants.</p>
             </article>
-            <article> <!-- hotel info -->
+            <article id="article1" class="hidden"> <!-- hotel info -->
                 <h2>Get some shuteye</h2>            
                     <p>Whether you prefer trendy or traditional, find the right hotel for you.</p>
             </article>
-            <article"> <!-- sightseeing info -->
+            <article id="article2" class="hidden"> <!-- sightseeing info -->
                 <h2>See the sights</h2>            
                     <p>Plan your days with the sightseeing guide.</p>
             </article>
@@ -91,6 +85,22 @@
                 }
             }
             citySubmit.addEventListener('click', checkCity)
+
+            function displayHotel() {
+                document.getElementById("article1").style.display = "revert"
+                document.getElementById("article2").style.display = "none"
+                document.getElementById("article3").style.display = "none"
+            }
+            function displaySights() {
+                document.getElementById("article2").style.display = "revert"
+                document.getElementById("article1").style.display = "none"
+                document.getElementById("article3").style.display = "none"
+            }
+            function displayRestaurant() {
+                document.getElementById("article3").style.display = "revert"
+                document.getElementById("article1").style.display = "none"
+                document.getElementById("article2").style.display = "none"
+            }
         </script>
     </body>
 </html>
