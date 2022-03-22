@@ -22,5 +22,7 @@ citySubmit.addEventListener('click', checkCity)
 let userName = prompt("What's your name?")
     if (userName != null) {
         document.getElementById("intro").innerHTML =
-        "Guten tag " + userName + "! Now you know how to say hello in German.";
+        "Guten tag, " + userName + "! Now you know how to say hello in German!";
+    } else {
+        "I respect your privacy."
     }
