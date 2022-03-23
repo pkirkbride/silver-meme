@@ -2,13 +2,13 @@ const citySubmit = document.querySelector('.citySubmit');
 const cityField = document.querySelector('.cityField');
 function learnGerman() {
     let viewerName = prompt("What's your name?");
-        if (viewerName != null) {
+        if (viewerName != undefined) {
             document.getElementById("intro").innerHTML =
-            "Guten tag, " + viewerName + "! Now you know how to say hello in German!";
+            "Guten tag, <strong>" + viewerName + "</strong>! Now you know how to say hello in German!";
         } else {
             alert("I respect your privacy.");
 
-    }
+        }
 }
 function checkCity() {
     let userEntry = cityField.value;
