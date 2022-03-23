@@ -1,15 +1,15 @@
-let viewerName = prompt("What's your name?");
-    if (viewerName != null) {
-        document.getElementById("intro").innerHTML =
-        "Guten tag, " + viewerName + "! Now you know how to say hello in German!";
-    } else {
-        alert("I respect your privacy.");
-
-    }
-
 const citySubmit = document.querySelector('.citySubmit');
 const cityField = document.querySelector('.cityField');
+function learnGerman() {
+    let viewerName = prompt("What's your name?");
+        if (viewerName != null) {
+            document.getElementById("intro").innerHTML =
+            "Guten tag, " + viewerName + "! Now you know how to say hello in German!";
+        } else {
+            alert("I respect your privacy.");
 
+    }
+}
 function checkCity() {
     let userEntry = cityField.value;
     if (userEntry.toLowerCase() == "paris") {
@@ -19,7 +19,7 @@ function checkCity() {
     } else if (userEntry.toLowerCase() == "berlin") {
         if (confirm("Do you want to go to the Berlin page?") == true) {
                 window.location="berlin.html";
-        }
+            }
     } else if (userEntry.toLowerCase() == "kyoto") {
         alert("The Kyoto site is still under construction. Please enter a different city.");
     } else {
