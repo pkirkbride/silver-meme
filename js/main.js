@@ -9,7 +9,7 @@ function learnGerman() {
             alert("I respect your privacy.");
         }
     }
-    
+
 function checkCity() {
     let userEntry = cityField.value;
     if (userEntry.toLowerCase() == "paris") {
@@ -23,7 +23,7 @@ function checkCity() {
     } else if (userEntry.toLowerCase() == "kyoto") {
         alert("The Kyoto site is still under construction. Please enter a different city.");
     } else {
-        alert("Are you sure you spelled that right? If so, we are still working on a page for that city. Please select a different city.");
+        alert("Are you sure you spelled that right? If so, we are still working on a page for that city. Please enter a different city.");
     }
 }
 
