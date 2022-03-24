@@ -1,15 +1,15 @@
 const citySubmit = document.querySelector('.citySubmit');
 const cityField = document.querySelector('.cityField');
+
 function learnGerman() {
-    let viewerName = prompt("What's your name?");
-        if (viewerName != undefined) {
-            document.getElementById("intro").innerHTML =
-            "Guten tag, <strong>" + viewerName + "</strong>! Now you know how to say hello in German!";
+    let viewerName = prompt("What's your name?", "Traveler");
+        if (viewerName != null) {
+            document.getElementById("intro").innerHTML = "Guten tag, <strong>" + viewerName + "</strong>! Now you know how to say hello in German!" 
         } else {
             alert("I respect your privacy.");
-
         }
-}
+    }
+    
 function checkCity() {
     let userEntry = cityField.value;
     if (userEntry.toLowerCase() == "paris") {
@@ -26,20 +26,21 @@ function checkCity() {
         alert("Are you sure you spelled that right? If so, we are still working on a page for that city. Please select a different city.");
     }
 }
-citySubmit.addEventListener('click', checkCity)
+
+citySubmit.addEventListener('click', checkCity);
 
 function displayHotel() {
-    document.getElementById("article1").style.display = "revert"
-    document.getElementById("article2").style.display = "none"
-    document.getElementById("article3").style.display = "none"
+    document.getElementById("article1").style.display = "revert";
+    document.getElementById("article2").style.display = "none";
+    document.getElementById("article3").style.display = "none";
     }
 function displaySights() {
-    document.getElementById("article2").style.display = "revert"
-    document.getElementById("article1").style.display = "none"
-    document.getElementById("article3").style.display = "none"
+    document.getElementById("article2").style.display = "revert";
+    document.getElementById("article1").style.display = "none";
+    document.getElementById("article3").style.display = "none";
     }
 function displayRestaurant() {
-    document.getElementById('article3').style.display = "revert"
-    document.getElementById("article1").style.display = "none"
-    document.getElementById("article2").style.display = "none"
+    document.getElementById('article3').style.display = "revert";
+    document.getElementById("article1").style.display = "none";
+    document.getElementById("article2").style.display = "none";
     }
