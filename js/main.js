@@ -56,7 +56,7 @@ function eiffelTowerCountPrompter(multiPrompt) {
         let message = 'You\'re no fun. How many more Eiffel Towers do you want to see?'
         eiffelTowerCountPrompter(message + ' ' + error)
     }
-    if (towerCount > '6') {
+    if (towerCount > 6) {
         let error = 'That\'s a little excessive, isn\'t it\? Try entering six or fewer.'
         let message = 'How many more Eiffel Towers do you want to see?'
         eiffelTowerCountPrompter(error + ' ' + message)
