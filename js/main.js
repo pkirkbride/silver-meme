@@ -3,13 +3,11 @@ const cityField = document.querySelector('.cityField');
 
 function learnGerman() {
     let viewerName = prompt("What's your name?", "Traveler");
-        while (viewerName == '') {
-            prompt("Please enter a name");
-    
-        //     document.getElementById("intro").innerHTML = "Guten tag, <strong>" + viewerName + "</strong>! Now you know how to say hello in German!" 
-        // } else {
-        //     alert("I respect your privacy.");
-        // }
+        if (viewerName !== null) {
+            document.getElementById("intro").innerHTML = "Guten tag, <strong>" + viewerName + "</strong>! Now you know how to say hello in German!" 
+        } else {
+            alert("I respect your privacy.");
+        }
     }
 
 function checkCity() {
