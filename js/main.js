@@ -44,3 +44,25 @@ function displayRestaurant() {
     document.getElementById("article1").style.display = "none";
     document.getElementById("article2").style.display = "none";
     }
+
+function eiffelTowerCountPrompter(multiPrompt) {
+    if (!multiPrompt) {
+        multiPrompt = 'How many more Eiffel Towers do you want to see'
+    }
+    let towerCount = prompt(multiPrompt);
+
+    if (towerCount === '') {
+        let error = 'Please enter a number between zero and six'
+        let message = 'You\'re no fun. How many more Eiffel Towers do you want to see?'
+        eiffelTowerCountPrompter(message + ' ' + error)
+    }
+    if (towerCount > '6') {
+        let error = 'That\'s a little excessive, isn\'t it\? Try entering six or fewer.'
+        let message = 'How many more Eiffel Towers do you want to see?'
+        eiffelTowerCountPrompter(error + ' ' + message)
+    } 
+    if (towerCount <= '6')
+    for (let i = 0; i < towerCount; i++) {
+        document.getElementById("intro").innerHTML += ' <img src="images/eiffel_tower.jpeg" alt="Eiffel tower at night" width=100px> ' + (i + 1);
+    }
+}
