@@ -27,7 +27,7 @@ function checkCity() {
     }
 }
 
-citySubmit.addEventListener('click', checkCity);
+citySubmit.addEventListener('click', checkCity());
 
 function displayHotel() {
     document.getElementById("article1").style.display = "revert";
