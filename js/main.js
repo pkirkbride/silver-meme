@@ -1,5 +1,5 @@
-const citySubmit = document.querySelector('.citySubmit');
-const cityField = document.querySelector('.cityField');
+// const citySubmit = document.querySelector('.citySubmit');
+// const cityField = document.querySelector('.cityField');
 
 function learnGerman() {
     let viewerName = prompt("What's your name?", "Traveler");
@@ -27,7 +27,7 @@ function checkCity() {
     }
 }
 
-citySubmit.addEventListener('click', checkCity());
+// citySubmit.addEventListener('click', checkCity());
 
 function displayHotel() {
     document.getElementById("article1").style.display = "revert";
